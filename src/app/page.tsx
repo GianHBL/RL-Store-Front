@@ -1,13 +1,16 @@
+'use client'
+
 import Image from 'next/image'
 import styles from './page.module.css'
-import NavBar from '../components/navbar/navbar'
 import Banner from '../components/banner/banner'
 import Category from '../components/category/category'
+import Carroussel from '@/components/carroussel/carroussel'
+import NavBar from '@/components/navbar/navbar'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <NavBar/>
+              <NavBar />
       <div className={styles.content}>
         <div className={styles.banner}>
           <Banner
@@ -21,6 +24,9 @@ export default function Home() {
           <Category/>
           <Category/>
           <Category/>
+        </div>
+        <div className={styles.carroussel}>
+          <Carroussel/>
         </div>
       </div>
     </div>
