@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Product.module.css';
+import styles from './product.module.css';
 
 interface ProductProps {
     id: number;
