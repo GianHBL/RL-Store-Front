@@ -4,7 +4,8 @@ import React, { useEffect, useState } from 'react';
 import styles from './page.module.css';
 import Banner from '../components/banner/banner';
 import Category from '../components/category/category';
-import { getProducts } from '../routes/getProducts';
+import Carroussel from '@/components/carousel/carroussel';
+import { ThreeItemGrid } from '@/components/grid/three-items';
 
 export default function Home() {
   const Shirts = [
@@ -117,21 +118,22 @@ export default function Home() {
   ];
 
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
+    <div className="bg-black">
+      <div className="container mx-auto bg-yellow-500 pt-20">
         <div className={styles.banner}>
           <Banner
             src="https://th.bing.com/th/id/R.6db651919d180d4b5d8be16397970981?rik=70WITgrJ7VYMIg&pid=ImgRaw&r=0"
             alt="Banner"
           />
         </div>
-        <div className={styles.categories}>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5 md:grid-gap-4 bg-steelblue pt-8 md:pt-2">
           <Category />
           <Category />
           <Category />
           <Category />
           <Category />
         </div>
+        <ThreeItemGrid />
         <div className={styles.carroussel}>
           <h2 className="text-3xl font-bold underline"> Camisas em Destaque</h2>
         </div>
