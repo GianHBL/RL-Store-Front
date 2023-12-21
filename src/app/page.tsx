@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './page.module.css';
 import Banner from '../components/banner/banner';
 import Category from '../components/category/category';
-import Carroussel from '@/components/carousel/carroussel';
+import { Carousel } from '@/components/carousel';
 import { ThreeItemGrid } from '@/components/grid/three-items';
 
 export default function Home() {
@@ -137,6 +137,7 @@ export default function Home() {
         <div className={styles.carroussel}>
           <h2 className="text-3xl font-bold underline"> Camisas em Destaque</h2>
         </div>
+        <Carousel />
         <div className={styles.carroussel}>
           <h2> Calças em Destaque</h2>
         </div>
