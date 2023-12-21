@@ -4,15 +4,13 @@ import styles from './product.module.css';
 interface ProductProps {
     id: number;
     name: string;
-    image: string;
+    imageUrl: string;
     price: number;
-}
-interface BannerProps {
-    src: string;
-    alt: string;
+    description: string;
+    stock: number;
 }
 
-const Product: React.FC<ProductProps> = ({ id, name, image, price }) => {
+const Product: React.FC<ProductProps> = ({ id, name, imageUrl, price, description, stock }) => {
     return (
         <div
             key={id}
@@ -20,7 +18,7 @@ const Product: React.FC<ProductProps> = ({ id, name, image, price }) => {
         >
             <div className={styles.img}>
                 <img
-                    src={image}
+                    src={imageUrl}
                     alt={name}
                 />
             </div>
