@@ -1,16 +1,6 @@
-import clsx from 'clsx';
 
 export default function LogoIcon(props: React.ComponentProps<'svg'>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label={`${process.env.SITE_NAME} logo`}
-      viewBox="0 0 32 28"
-      {...props}
-      className={clsx('h-4 w-4 fill-black dark:fill-white', props.className)}
-    >
-      <path d="M21.5758 9.75769L16 0L0 28H11.6255L21.5758 9.75769Z" />
-      <path d="M26.2381 17.9167L20.7382 28H32L26.2381 17.9167Z" />
-    </svg>
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhUUY2JslonT0-Ivm_qEIAY9TeTAxXBQWy-wR-EfoGmjOA11Erth02LgutfqRzQEzAcJxoNw1NsSfJY50w9iSNXK-I5dW5n_8xZJGjbRxaBdatN7Su-sw-RyNrNzprm5HAROsxafwXC62xv7q6kAUKuUSWbR_0P9qWcVWFiGA9ZXBVqc1bB69rrM-_Ccso" alt="Logo"/>
   );
 }

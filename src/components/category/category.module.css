@@ -1,20 +1,34 @@
 .container{
-    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    padding: 1rem;
 }
 .image{
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     background-color: blueviolet;
+    border-radius: 20%;
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.8));
+}
+
+.image:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
 }
 
 .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 20%;
+    cursor: pointer;
 }
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #fff;
+}  
